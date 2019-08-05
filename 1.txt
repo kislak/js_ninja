@@ -1,0 +1,84 @@
+1. javascript is everywhere
+
+
+core language feature
+core itmes
+3 best practices
+
+
+?:
+  Apachee Cordova
+  Ionic
+  Electron
+  Transpiler = trasformation + compiling
+    Traceur
+    Bable
+    
+1.1 undestanding language
+  JS bears (несет) a surface resemblance of other widespred c-like languages, and thus leaves the impression of familiarity.
+  But it's a trap!
+ 
+functions are first-class objects
+function closure 
+  fn=closure if it actively maintains external variables used in its body.
+  identifier scope
+scope
+  block level 
+  function level
+  global
+prototype-based object orientation
+
+other features
+  generators
+  promises
+  proxies
+  advanced array methods
+  maps and sets
+  regExp
+  moduels 
+
+Honing your skills to tie these concepts and features together will give you a level of understanding that puts the creation of any type of JS app within your reach.
+
+1.2 browser
+DOM 
+  structure, 
+  interaction
+events
+  timer
+browser API
+  infor about device
+  storage
+  communicate with remote servers
+
+Cross-browser support strategy
+
+1.3 best practices
+it is vitally important to adhere to these prqacitces when coding:
+debugging
+  alert
+  firebug
+  chrome devTools
+  f12 dev tools
+  webKit Inspector
+
+testing
+  assert(condition, message);
+
+performance analysis
+  console.time("my_operation"); # Starts timer 'my_operation'
+  my_operation();
+  console.timeEnd("my_operation");
+
+Achieving a deep understanding of fundamental JS principles with knowledge of core APIs can therefore make you a more versatile developer.
+
+
+?:
+  desktop
+    nwjs.io
+    electron.atom.io
+  mobile
+    apache cordova
+  server/embeded
+    node.js
+
+
