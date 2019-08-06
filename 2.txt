@@ -1,0 +1,7 @@
+Building the page at runtime
+
+
+lifecycle of client-side web app
+DOM
+event loop
+
