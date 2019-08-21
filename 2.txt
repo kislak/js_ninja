@@ -1,7 +1,41 @@
 Building the page at runtime
 
 
-lifecycle of client-side web app
-DOM
-event loop
+webApp lifecycle
+  - user click link (enter url)
+  - browser send request to server
+  - server send response
+  - browser receives the response
+    - page building (setup UI)
+      - parsing html, building DOM (tree (parent-children) )
+      - executing js (switching the 2 modes)
+    - event handling
+      - single-threaded execution
+      - enter a loop
+      - wait for events
+      - invoke event handlers (event listeners)
 
+
+events // The vast majority of code executes as a result of such events!
+  browser (load unload)
+  network (ajax, servers-side events)
+  user ( mouse click, key press)
+  timer (timeout, interval)
+
+register event handlers
+  - assign function to special properties
+      window.onload = function(){}; #not recommended (only 1 function per event - easy to override smth unexpecedly)
+  - addEventListener
+      document.body.addEventListener("mouseover", function () {
+          var second = document.getElementById("second");
+          addMessage(second, "Event: mousemove");
+      })
+
+
+
+The execution of client-side web applications is performed in two phases:
+  page building
+    html -> dom
+    <script> nodes - global js is executed (modify current DOM, register event handlers)
+  event handling
+    process events one by one from event queue
