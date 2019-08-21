@@ -1,1 +1,17 @@
-functions
+Chapter 3. First-class functions for the novice: definitions and arguments
+
+
+functions are first-class objects
+
+
+object
+  create via literals:
+    {}
+  asigned to var:
+    var ninja = {};
+  pass as argument
+  returned as values
+  possess properties that can be dynamically created and assigned
+    var ninja = {};
+    ninja.name = "Serge";
+
